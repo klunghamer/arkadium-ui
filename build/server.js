@@ -6,7 +6,7 @@ var port = process.env.PORT || 4000;
 
 // MIDDLEWARE/CONFIGS
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname,'../build')))
+app.use(express.static(path.join(__dirname,'../src')))
 
 // app.use('/scripts', express.static(__dirname + '/bower_components'))
 
