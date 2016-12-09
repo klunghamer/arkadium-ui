@@ -23,7 +23,7 @@
       if (year === self.year) {
         self.result = `You're Correct! The answer is ${self.year}!`;
       } else {
-        self.result = `Incorrect :( the answer is ${self.year}.`;
+        self.result = `Incorrect... the answer is ${self.year}.`;
       }
     }
 

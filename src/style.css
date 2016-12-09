@@ -1,0 +1,40 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #accaf9;
+}
+
+.input-field label {
+  color: #3f51b5;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #3f51b5;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3f51b5;
+  box-shadow: 0 1px 0 0 #3f51b5;
+}
+
+#pic {
+  width: 80%;
+  margin-top: 2em;
+  border-radius: 3px;
+}
+
+#container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+#result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}

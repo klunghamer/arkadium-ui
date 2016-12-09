@@ -1,4 +1,9 @@
-{{movie.result}}
-<button ui-sref='quiz' ng-click="movie.newQuestion()">Play Again?</button>
-
-<img src="img/{{movie.image}}">
+<div class="container"><br>
+  <div class="row" id="result">
+    <h4>{{movie.result}}</h4>
+    <button class="btn indigo" ui-sref='quiz' ng-click="movie.newQuestion()">Play Again?</button>
+  </div>
+  <div class="row center">
+    <img id="pic" src="img/{{movie.image}}">
+  </div>
+</div>
