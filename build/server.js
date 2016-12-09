@@ -8,15 +8,13 @@ var port = process.env.PORT || 4000;
 app.use(logger('dev'));
 app.use(express.static(path.join(__dirname,'../src')))
 
-// app.use('/scripts', express.static(__dirname + '/bower_components'))
-
 app.get('/', function(req, res) {
   res.render('index');
 });
 
-// app.all('/*', function(req, res, next) {
-//   res.sendFile('/public/index.html', { root: __dirname });
-// });
+app.all('/*', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../src', '_quiz.html'));
+});
 
 app.listen(port, function() {
   console.log('======================');
