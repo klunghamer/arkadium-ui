@@ -6,14 +6,14 @@ var port = process.env.PORT || 4000;
 
 // MIDDLEWARE/CONFIGS
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname,'../src')))
+app.use(express.static(path.join(__dirname,'/src')))
 
 app.get('/', function(req, res) {
   res.render('index');
 });
 
 app.all('/*', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../src', '_quiz.html'));
+  res.sendFile(path.join(__dirname, '/src', '_quiz.html'));
 });
 
 app.listen(port, function() {
