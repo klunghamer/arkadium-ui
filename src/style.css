@@ -20,21 +20,23 @@ body {
 }
 
 #pic {
-  width: 80%;
-  margin-top: 2em;
+  width: 90%;
+  /*margin-top: 2em;*/
   border-radius: 3px;
 }
 
 #container {
   height: 60vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 #result {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  height: 30vh;
 }

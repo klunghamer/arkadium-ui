@@ -1,19 +1,19 @@
 <div class="container">
   <h3>What year was <i>{{movie.title}}</i> released?</h3>
-  <div id="container">
-    <div class="row">
+  <div class="row">
+    <div id="container">
+      <div class="col s12 m6 center">
+        <img id="pic" src="img/{{movie.image}}">
+      </div>
       <form class="col s12 m6" ng-submit="movie.guessYear(year)">
         <div class="row">
-          <div class="input-field col s10 m8">
+          <div class="input-field col s12 m8">
             <input id="input" type="text" ng-model="year">
             <label for="year">Year</label>
           </div>
         </div>
         <button class="btn indigo" type="submit">Submit</button>
       </form>
-      <div class="col s12 m6 center">
-        <img id="pic" src="img/{{movie.image}}">
-      </div>
     </div>
   </div>
 </div>
